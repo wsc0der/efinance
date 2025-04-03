@@ -150,7 +150,7 @@ def get_quote_history_single(
     url = "https://push2his.eastmoney.com/api/qt/stock/kline/get"
 
     json_response = session.get(
-        url, headers=EASTMONEY_REQUEST_HEADERS, params=params, verify=False
+        url, headers=EASTMONEY_REQUEST_HEADERS, params=params, verify=True
     ).json()
     klines: List[str] = jsonpath(json_response, "$..klines[:]")
     if not klines:
