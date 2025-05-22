@@ -28,9 +28,9 @@ Documentation = "https://efinance.readthedocs.io"
 Source = "https://github.com/Micro-sheep/efinance"
 
 [tool.setuptools]
-package_dir = {"" = "efinance"},
-packages = find_packages("efinance"),
-include_package_data = True,
+package_dir = {"" = "efinance"}
+packages = find_packages("efinance")
+include_package_data = True
 
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }
