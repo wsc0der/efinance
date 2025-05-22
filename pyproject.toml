@@ -27,8 +27,5 @@ Homepage = "https://github.com/Micro-sheep/efinance"
 Documentation = "https://efinance.readthedocs.io"
 Source = "https://github.com/Micro-sheep/efinance"
 
-[tool.setuptools.packages.find]
-where = ["efinance"]
-
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }
