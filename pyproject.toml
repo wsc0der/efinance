@@ -28,8 +28,7 @@ Documentation = "https://efinance.readthedocs.io"
 Source = "https://github.com/Micro-sheep/efinance"
 
 [tool.setuptools]
-packages = ["efinance"]
-package_dir = {"": "efinance"},
+package_dir = {"" = "efinance"},
 packages = find_packages("efinance"),
 include_package_data = True,
 
