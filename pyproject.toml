@@ -29,6 +29,9 @@ Source = "https://github.com/Micro-sheep/efinance"
 
 [tool.setuptools]
 packages = ["efinance"]
+package_dir={"": "efinance"},
+packages=find_packages("efinance"),
+include_package_data=True,
 
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }
